@@ -1,0 +1,6 @@
+{
+  "name": "Quick Loan",
+  "description": "Mobile-first Loan Assistance & Facilitation app in Bengali & English with application tracking, EMI calculator, customer/agent/admin dashboards, and partner lender management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
