@@ -27,7 +27,7 @@ android {
   val debugKeystoreFile = file("${rootDir}/debug.keystore")
   val debugKeystoreB64File = file("${rootDir}/debug.keystore.base64")
   if (!debugKeystoreFile.exists() && debugKeystoreB64File.exists()) {
-    debugKeystoreFile.writeBytes(Base64.getDecoder().decode(debugKeystoreB64File.readText().trim()))
+    debugKeystoreFile.writeBytes(Base64.getMimeDecoder().decode(debugKeystoreB64File.readText()))
   }
 
   signingConfigs {
